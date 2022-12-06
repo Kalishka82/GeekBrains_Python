@@ -3,6 +3,13 @@
 
 nums = [1.1, 1.2, 3.1, 5.1, 10.01]
 
+for i in range(len(nums)):
+    nums[i] -= int(nums[i])
+print(round(max(nums), 2) - round(min(nums), 2))
+
+
+exit()
+
 
 def max_decimals(nums):
     maxim = nums[0] % 1
